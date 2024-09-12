@@ -1,0 +1,140 @@
+\documentclass[a4paper,9pt]{article}  % Reduced font size to 9pt
+\usepackage[margin=0.65in]{geometry}  % Narrower margins
+\usepackage{lmodern}  % Standard font package for ATS-friendly fonts
+\usepackage{enumitem} % For better itemize control
+\usepackage{hyperref} % For hyperlinks in the document
+\usepackage{multicol}  % For two-column layout
+\usepackage{fancyhdr}  % For custom header and footer
+\usepackage{xcolor}    % For text color
+
+% Set up the fancyhdr package for a custom footer
+\pagestyle{fancy}  % Activate fancy page style
+\fancyhf{}  % Clear default header and footer
+\fancyfoot[C]{\scriptsize \color{gray} \href{https://github.com/onesubhadip/MyResume}{Resume Source Code: https://github.com/onesubhadip/MyResume}}  % Add GitHub URL in the footer with small font and gray color
+
+% Remove page numbers
+\fancyfoot[R]{}
+\renewcommand{\headrulewidth}{0pt}  % Remove header line
+\renewcommand{\footrulewidth}{0pt}  % Remove footer line (except the GitHub link)
+
+% Reduce spacing between items and sections
+\setlist{nosep}
+\setlength{\parskip}{0pt}  % Reduce spacing between paragraphs
+\setlength{\parindent}{0pt}  % No indenting
+% \setlength{\baselineskip}{0.9\baselineskip}  % Reduce line spacing
+% Add this to reduce the line spacing in the document
+\linespread{0.95}
+
+% Make sure URLs are clickable and formatted nicely
+% \hypersetup{
+%     colorlinks=true,
+%     urlcolor=gray
+% }
+
+
+\begin{document}
+
+%-------------------- HEADER --------------------%
+\noindent
+\textbf{\Large Subhadip Dey} \\
+Email: \href{mailto:onesubhadip@gmail.com}{onesubhadip@gmail.com} | Phone: +44 7471184468 | LinkedIn: \href{https://www.linkedin.com/in/deysubhadip/}{linkedin.com/in/deysubhadip}
+
+
+
+%-------------------- EXPERIENCE --------------------%
+\section*{Experience}
+
+\textbf{JPMorgan Chase} \hfill Feb 2022 -- Present \\
+Senior Associate, Fixed Income Trading Tech Team(Asset Management) \hfill London, UK \vspace{-5pt}\\
+
+\begin{itemize}[left=0pt, label=\textbullet, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+    \item Migrated legacy Order Management System(OMS) to a modern Kafka-based state machine architecture, enabling real-time client updates via web socket integration
+    \item Shipped a feature to consolidate orders in Fixed Income OMS, to efficiency trade those in single-execution
+    \item Supported global trading desks, ensuring smooth execution of OTC FI and FX trades
+    \item Led development of an NLP chatbot as a mentor to interns, automating client interactions with the state machines
+    \item Streamlined build process by migrating from Maven to Gradle, reducing duplication and boosting efficiency.
+    \item Replaced Spring with Koin and Ktor in new services, leveraging Kotlin, Java, Kafka, SQL, Cassandra, REST, and GraphQL to build scalable trading systems.
+\end{itemize}
+\vspace{8pt}
+
+\textbf{Morgan Stanley} \hfill Mar 2021 -- Feb 2022 \\
+Senior Consultant, SEM RTB(Equity Swap Trading) \hfill Galsgow, UK \vspace{-5pt}\\
+\begin{itemize}[left=0pt, label=\textbullet, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+    \item Supported the RTB team in optimizing trading applications and resolving system gaps for smoother operations
+    \item Fixed historical cashflow impacting defects in the dividend compounding calculations in equity swap trades
+\end{itemize}
+\vspace{8pt}
+
+\textbf{EPAM Systems} \hfill Nov 2020 -- Feb 2021\\
+Lead Software Engineer \hfill Bangalore, India \vspace{-5pt}\\
+\begin{itemize}[left=0pt, label=\textbullet, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+    \item Briefly served as Lead Developer, focusing on full stack web development
+\end{itemize}
+\vspace{8pt}
+
+\textbf{Telenet} \hfill Jul 2019 -- Jul 2020\\
+Senior Consultant \hfill Mechelen, Belgium\vspace{-5pt}\\
+\begin{itemize}[left=0pt, label=\textbullet, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+    \item Developed backend services for Telenet’s online retail platform, managing public APIs for customer and product data and AEM pages, and adding rolling features for business continuity.
+    \item Migrated Telenet's AEM platform to the latest version, adapting code to meet Adobe standards
+\end{itemize}
+\vspace{8pt}
+
+\textbf{Deutsche Bank} \hfill Sep 2017 -- May 2019 \\
+Associate, Tax Technology Team\hfill Bangalore, India \vspace{-5pt}\\
+\begin{itemize}[left=0pt, label=\textbullet, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+    \item Built and shipped a reconciliation platform for French Withholding Tax, used by the Tax Ops team
+    \item Developed the Angular client for the platform, delivering a user-friendly interface for operations
+    \item Onboarded services to the Openshift platform, enhancing deployment and scalability
+\end{itemize}
+\vspace{8pt}
+
+\textbf{Societe Generale} \hfill Nov 2015 -- Aug 2017 \\
+Senior Software Engineer Consultant \hfill Bangalore, India \vspace{-5pt}\\
+\begin{itemize}[left=0pt, label=\textbullet, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+    \item Improved a distributed gateway to route high-volume Risk Analysis data between systems
+    \item Added a priority-based data delivery and shipped rolling features to improve efficiency and continuity
+\end{itemize}
+\vspace{8pt}
+
+\textbf{Tata Consultancy Services Ltd} \hfill Mar 2011 -- Oct 2015\\
+IT Analyst \hfill Bangalore, India \vspace{-5pt}\\
+\begin{itemize}[left=0pt, label=\textbullet, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+    \item Supported Apple’s high scaled CRM applications, fixing defects in high-traffic systems, used by Apple customers, call centers and retail stores
+    \item Automated daily monitoring with many Shell and Jython scripts, reducing manual effort
+    \item Led development of a KPI dashboard to gather insights from Splunk, databases, and APIs
+\end{itemize}
+\vspace{8pt}
+
+
+%-------------------- SKILLS --------------------%
+\section*{Skills}
+
+\begin{itemize}[left=0pt, label=\textbullet, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+    \item \textbf{Programming Languages/Frameworks}: Kotlin, Java, SQL, Shell Script, Ktor, Koin, Spring Framework
+    \item \textbf{Backend Technologies}: Kafka, Docker, Zookeeper
+    \item \textbf{Database Systems}: Oracle, PostgreSQL, Cassandra
+    \item \textbf{Tools}: Git, Gradle, Maven, BitBucket, Jenkins, Teamcity, Jira, Grafana, Splunk
+\end{itemize}
+
+%-------------------- TWO COLUMN: EDUCATION AND CERTIFICATIONS --------------------%
+\begin{multicols}{2}
+
+%-------------------- EDUCATION --------------------%
+\section*{Education}
+
+\textbf{Bachelor of Technology in Computer Science} \\  
+West Bengal University of Technology, Kolkata, India \\
+2006 - 2010\\
+
+%-------------------- CERTIFICATIONS --------------------%
+\section*{Certifications}
+
+\begin{itemize}[left=0pt, label=\textbullet, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+    \item AWS Certified Cloud Practitioner
+    \item Oracle Certified Professional Java Programmer
+\end{itemize}
+
+\end{multicols}
+
+\end{document}
